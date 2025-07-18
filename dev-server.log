@@ -1,0 +1,39 @@
+
+> practice-menu@0.1.0 start
+> react-scripts start
+
+(node:14693) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:14693) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled with warnings.
+
+[eslint] 
+src/components/practiceMenu.jsx
+  Line 6:10:    'isSticky' is assigned a value but never used                                                                                                                                                                                                                                                  no-unused-vars
+  Line 38:21:   'setDebugInfo' is assigned a value but never used                                                                                                                                                                                                                                              no-unused-vars
+  Line 62:9:    'sliderRef' is assigned a value but never used                                                                                                                                                                                                                                                 no-unused-vars
+  Line 65:9:    'lastScrollTop' is assigned a value but never used                                                                                                                                                                                                                                             no-unused-vars
+  Line 69:9:    The 'categories' array makes the dependencies of useEffect Hook (at line 445) change on every render. To fix this, wrap the initialization of 'categories' in its own useMemo() Hook                                                                                                           react-hooks/exhaustive-deps
+  Line 465:6:   React Hook useEffect has a missing dependency: 'startAutoPlay'. Either include it or remove the dependency array                                                                                                                                                                               react-hooks/exhaustive-deps
+  Line 481:6:   React Hook useEffect has missing dependencies: 'handleMouseMove' and 'handleMouseUp'. Either include them or remove the dependency array                                                                                                                                                       react-hooks/exhaustive-deps
+  Line 564:42:  The ref value 'scrollEndTimeoutRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'scrollEndTimeoutRef.current' to a variable inside the effect, and use that variable in the cleanup function          react-hooks/exhaustive-deps
+  Line 567:46:  The ref value 'tabClickBlockTimeoutRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'tabClickBlockTimeoutRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/practiceMenu.jsx
+  Line 6:10:    'isSticky' is assigned a value but never used                                                                                                                                                                                                                                                  no-unused-vars
+  Line 38:21:   'setDebugInfo' is assigned a value but never used                                                                                                                                                                                                                                              no-unused-vars
+  Line 62:9:    'sliderRef' is assigned a value but never used                                                                                                                                                                                                                                                 no-unused-vars
+  Line 65:9:    'lastScrollTop' is assigned a value but never used                                                                                                                                                                                                                                             no-unused-vars
+  Line 69:9:    The 'categories' array makes the dependencies of useEffect Hook (at line 445) change on every render. To fix this, wrap the initialization of 'categories' in its own useMemo() Hook                                                                                                           react-hooks/exhaustive-deps
+  Line 465:6:   React Hook useEffect has a missing dependency: 'startAutoPlay'. Either include it or remove the dependency array                                                                                                                                                                               react-hooks/exhaustive-deps
+  Line 481:6:   React Hook useEffect has missing dependencies: 'handleMouseMove' and 'handleMouseUp'. Either include them or remove the dependency array                                                                                                                                                       react-hooks/exhaustive-deps
+  Line 564:42:  The ref value 'scrollEndTimeoutRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'scrollEndTimeoutRef.current' to a variable inside the effect, and use that variable in the cleanup function          react-hooks/exhaustive-deps
+  Line 567:46:  The ref value 'tabClickBlockTimeoutRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'tabClickBlockTimeoutRef.current' to a variable inside the effect, and use that variable in the cleanup function  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
