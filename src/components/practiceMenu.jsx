@@ -698,6 +698,7 @@ const PracticeMenuWithOptions = () => {
 
   return (
     <>
+      <head>{`<meta name="theme-color" content="#FFAS3D">`}</head>
       <style jsx>{`
         * {
           margin: 0;
@@ -705,6 +706,7 @@ const PracticeMenuWithOptions = () => {
           box-sizing: border-box;
           font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
           -webkit-tap-highlight-color: transparent;
+          -webkit-text-size-adjust:none;
         }
         
         body {
@@ -1777,7 +1779,8 @@ const PracticeMenuWithOptions = () => {
               ))}
             </div>
             <div className="language-icon">
-              {/* 언어 아이콘 SVG 여기에 넣어주세요 */}
+                <img src="https://woworderbucket.s3.ap-northeast-2.amazonaws.com/languageicon.png" alt="언어" style={{ width: '19px', height: '19px' }} />
+
             </div>
           </div>
         </div>
@@ -1819,9 +1822,9 @@ const PracticeMenuWithOptions = () => {
               style={{ height: noticeHeight }}
             >
               <div className="notice-content" ref={noticeContentRef}>
-                <div className="notice-icon">
-                  {/* 공지사항 아이콘 SVG 여기에 넣어주세요 */}
-                </div>
+                
+                <img className="notice-icon" src="https://woworderbucket.s3.ap-northeast-2.amazonaws.com/noticeicon.png" alt="공지" style={{ width: '14px', height: '14px' }} />
+                
                 <div className="notice-text">
                   반반콤보 재고 소진되었습니다. 다른 치킨을 주문하고 싶으신 분들은 다른 매장에 가서 추가 구매를 하거나 매장을 이용하실 분들은 장바구니에 메뉴를 담아주세요.
                 </div>
