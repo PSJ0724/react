@@ -1800,7 +1800,7 @@ const PracticeMenuWithOptions = () => {
           {/* Store Info Container */}
           <div className="store-info-container">
             <div className="store-info">
-              <text className="store-name">교촌치킨 방학점</text>
+              <text className="store-name">교촌치킨 방학점이라구</text>
               <div className="table-badge">3번 테이블</div>
             </div>
 
