@@ -20,36 +20,12 @@ jobs:
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_SSH_KEY }}
         port: 22
-        timeout: 300s  # 5분 타임아웃
-        command_timeout: 300s
         script: |
-          echo "🔍 Starting deployment..."
           cd /home/ubuntu/react
           
-          # 기존 프로세스 정리
-          echo "🧹 Cleaning up existing processes..."
-          pm2 delete app.js > /dev/null 2>&1 || true
-          pkill -f "npm.*start" > /dev/null 2>&1 || true
-          
-          # Git 안전 디렉토리 설정
+          # Git 안전 디렉토리 설정 (한 번만 필요)
           git config --global --add safe.directory /home/ubuntu/react
           
           # 로컬 변경사항 무시하고 최신 코드 가져오기
-          echo "📥 Fetching latest code..."
           git fetch origin master
           git reset --hard origin/master
-          
-          # 의존성 설치 (타임아웃 설정)
-          echo "📦 Installing dependencies..."
-          timeout 300 npm install || {
-            echo "❌ npm install failed or timed out"
-            exit 1
-          }
-          
-          # PM2로 앱 시작
-          echo "🚀 Starting application..."
-          pm2 start npm --name "my-app" -- start
-          
-          # 배포 완료 확인
-          echo "🎉 Deployment completed!"
-          pm2 status
