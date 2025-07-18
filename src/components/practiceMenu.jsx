@@ -707,6 +707,9 @@ const PracticeMenuWithOptions = () => {
           font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
           -webkit-tap-highlight-color: transparent;
           -webkit-text-size-adjust:none;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          text-rendering: optimizeLegibility;
         }
         
         body {
@@ -911,7 +914,7 @@ const PracticeMenuWithOptions = () => {
         }
 
         .store-info-container {
-          padding: 16px 16px 0 16px;
+          padding: 16px 16px 4px 16px;
           width: 360px;
           box-sizing: border-box;
         }
@@ -1790,7 +1793,7 @@ const PracticeMenuWithOptions = () => {
           {/* Store Info Container */}
           <div className="store-info-container">
             <div className="store-info">
-              <h1 className="store-name">교촌치킨 방학점</h1>
+              <text className="store-name">교촌치킨 방학점</text>
               <div className="table-badge">3번 테이블</div>
             </div>
 
