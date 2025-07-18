@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import Head from 'next/head'
 const PracticeMenuWithOptions = () => {
   // 기존 상태들
   const [activeTab, setActiveTab] = useState(0);
@@ -698,7 +698,7 @@ const PracticeMenuWithOptions = () => {
 
   return (
     <>
-      <head>{`<meta name="theme-color" content="#FFAS3D">`}</head>
+      <Head jsx>{`<meta name="theme-color" content="#FFAS3D">`}</Head>
       <style jsx>{`
         * {
           margin: 0;
@@ -711,7 +711,11 @@ const PracticeMenuWithOptions = () => {
           -moz-osx-font-smoothing: grayscale;
           text-rendering: optimizeLegibility;
         }
-        
+        @font-face{
+        font-family: 'Pretendard';
+        src: url('https://woworderfontsbucket.s3.ap-northeast-2.amazonaws.com/PretendardVariable.woff2') format('woff2');
+        font-display: swap;
+        }
         body {
           background-color: #ffffff;
           overflow-x: hidden;
