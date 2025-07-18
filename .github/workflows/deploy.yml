@@ -31,7 +31,7 @@ jobs:
           npm install
           
           # 빌드가 필요한 경우
-          npm run build
+          # npm run build
           
           # PM2로 앱 재시작 (PM2 사용 시)
           pm2 restart app.js || pm2 start npm --name "app.js" -- start
