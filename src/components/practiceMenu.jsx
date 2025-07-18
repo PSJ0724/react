@@ -699,11 +699,19 @@ const PracticeMenuWithOptions = () => {
     <>
       <head jsx>{`<meta name="theme-color" content="#FFAS3D">`}</head>
       <style jsx>{`
+
+          @font-face {
+            font-family: 'Pretendard';
+            src: url('https://woworderfontsbucket.s3.ap-northeast-2.amazonaws.com/PretendardVariable.woff2') format('woff2-variations'),
+            font-display: swap;
+            font-weight: 100 900; /* Variable font 범위 */
+          }
+
         * {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
-          font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+          font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
           -webkit-tap-highlight-color: transparent;
           -webkit-text-size-adjust:none;
           -webkit-font-smoothing: antialiased;
